@@ -1,8 +1,60 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+:root {
+  font-size: 16px;
+  --light-rose: #fff7fb;
+  --dark-rose: #7a284e;
+  --dark-gray: #312e2c;
+  --med-gray: #5f564d;
+  --light-gray: #e3ddd7;
+  --ivory: #f3e5d7;
+  --brown: #854632;
+  --white: #fff;
+  --gap-100: 0.5rem;
+  --gap-150: 0.75rem;
+  --gap-200: 1rem;
+  --gap-300: 1.5rem;
+  --gap-400: 2rem;
+  --gap-500: 2.5rem;
+  --gap-600: 3rem;
+  --gap-1600: 8rem;
+  --text-1: 400 2.5rem/1 'Young Serif', serif;
+  --text-2: 400 1.75rem/1 'Young Serif', serif;
+  --text-3: 600 1.25rem/1 'Outfit', sans-serif;
+  --text-4: 400 1rem/1.5 'Outfit', sans-serif;
+  --text-5: 700 1rem/1.5 'Outfit', sans-serif;
 }
 
-a {
-  color: #00B7FF;
+@font-face {
+  font-family: 'Young Serif';
+  src: url('../fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font: var(--text-4);
+  background-color: var(--ivory);
+}
+h1 {
+  font: var(--text-1);
+}
+h2 {
+  font: var(--text-2);
+}
+h3 {
+  font: var(--text-3);
+}
+
+.main-wrapper {
+  max-width: 46rem;
+  padding-block: var(--gap-1600);
+}
+.main-wrapper > * {
+  background-color: var(--white);
 }
