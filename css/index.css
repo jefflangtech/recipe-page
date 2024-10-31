@@ -33,28 +33,67 @@
   src: url('../fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
 }
 
+body * {
+  /* border: 1px solid red; */
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   font: var(--text-4);
+  color: var(--med-gray);
   background-color: var(--ivory);
 }
 h1 {
   font: var(--text-1);
+  color: var(--dark-gray);
+  margin-bottom: var(--gap-300);
 }
 h2 {
   font: var(--text-2);
+  color: var(--brown);
 }
 h3 {
   font: var(--text-3);
+  color: var(--dark-rose);
 }
 
-.main-wrapper {
+.content-wrapper {
   max-width: 46rem;
-  padding-block: var(--gap-1600);
+  margin-block: var(--gap-1600);
+  border-radius: var(--gap-300);
+  overflow: hidden;
 }
-.main-wrapper > * {
+.content-wrapper > * {
   background-color: var(--white);
+}
+
+header,
+main {
+  display: grid;
+  grid-template-columns: var(--gap-500) [content-start] 1fr [content-end] var(--gap-500);
+}
+
+header > *,
+main > * {
+  grid-column: content;
+}
+
+.hero-img {
+  margin-block: var(--gap-500);
+  border-radius: var(--gap-150);
+  overflow: hidden;
+}
+
+.card {
+  /* border: 1px solid red; */
+  margin-top: var(--gap-400);
+}
+
+.inset {
+  background-color: var(--light-rose);
+  padding: var(--gap-300);
+  border-radius: var(--gap-150);
 }
