@@ -65,6 +65,10 @@ h3 {
   color: var(--dark-rose);
 }
 
+.text-label {
+  font: var(--text-5);
+}
+
 .content-wrapper {
   max-width: 46rem;
   margin-block: var(--gap-1600);
@@ -101,6 +105,30 @@ main > * {
   background-color: var(--light-rose);
   padding: var(--gap-300);
   border-radius: var(--gap-150);
+}
+
+ul {
+  margin-bottom: 0rem;
+}
+
+li {
+  margin-bottom: var(--gap-100);
+  list-style: none;
+}
+
+ul > li:last-child {
+  margin-bottom: 0rem;
+  /* border: 1px solid green; */
+}
+
+li::before {
+  content: "·";
+  margin-right: 1rem;
+  color: var(--dark-rose);
+  /* border: 1px solid red; */
+  position: absolute;
+  font-size: 2rem;
+  translate: -2rem -0.75rem;
 }
 
 .display-none {
